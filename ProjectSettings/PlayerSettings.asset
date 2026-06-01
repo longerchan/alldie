@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  companyName: FrostShelter Studio
+  productName: "寒霜庇护所"
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  m_SplashScreenBackgroundColor: {r: 0.1, g: 0.15, b: 0.25, a: 1}
+  m_ShowUnitySplashScreen: 0
+  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_ActiveColorSpace: 1
+  m_StripUnusedMeshComponents: 1
+  m_VertexChannelCompressionMask: 4054
+  m_DefaultScreenOrientation: 4
+  allowedAutorotateToPortrait: 1
+  allowedAutorotateToPortraitUpsideDown: 0
+  allowedAutorotateToLandscapeRight: 1
+  allowedAutorotateToLandscapeLeft: 1
+  usePlayerLog: 1
+  resizableWindow: 0
+  m_DefaultCursor: {fileID: 0}
+  androidMinSdkVersion: 28
+  androidTargetSdkVersion: 33
+  AndroidTargetArchitectures: 2
+  iOSTargetOSVersionString: 14.0
+  applicationIdentifier: com.frostshelter.game
+  buildNumber: 1
+  bundleVersion: 0.1.0
+  AndroidBundleVersionCode: 1
+  AndroidMinifyRelease: 0
+  AndroidPreferredInstallLocation: 0
+  StripEngineCode: 1
+  iPhoneStrippingLevel: 1
+  iPhoneScriptCallOptimization: 1
+  ForceSingleInstance: 1
+  enableNativePlatformBackButtonForTouchInput: 1
+  disableHWStatistics: 1
+  resolutionDialogBanner: {fileID: 0}
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: Android
+    m_APIs: 0b00000008000000
+    m_Automatic: 1
+  - m_BuildTarget: iOS
+    m_APIs: 0b00000008000000
+    m_Automatic: 1
+  m_TargetDevice: 3
+  useOnDemandResources: 0
+  accelerometerFrequency: 60
