@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace FrostShelter.Core
 {
@@ -6,7 +7,7 @@ namespace FrostShelter.Core
     /// 全局游戏配置。所有系统共用参数的新手/标准/硬核档位。
     /// </summary>
     [Serializable]
-    public class GlobalConfigSO
+    public class GlobalConfigSO : ScriptableObject
     {
         public string GameVersion = "0.1.0";
         public DifficultyLevel Difficulty = DifficultyLevel.Normal;
