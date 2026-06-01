@@ -9,7 +9,7 @@ namespace FrostShelter.UI.Views
     /// </summary>
     public class BuildingPanel : BasePanel
     {
-        public Building.BuildingId CurrentBuildingId { get; private set; }
+        public BuildingId CurrentBuildingId { get; private set; }
 
         public BuildingInfo CurrentInfo;
 
@@ -20,7 +20,7 @@ namespace FrostShelter.UI.Views
 
         public BuildingPanel() : base("BuildingPanel", PanelLayer.Normal) { }
 
-        public void ShowForBuilding(Building.BuildingId buildingId)
+        public void ShowForBuilding(BuildingId buildingId)
         {
             CurrentBuildingId = buildingId;
             Show();
@@ -52,7 +52,7 @@ namespace FrostShelter.UI.Views
     [Serializable]
     public struct BuildingInfo
     {
-        public Building.BuildingId Id;
+        public BuildingId Id;
         public string DisplayName;
         public string Description;
         public int Level;

@@ -1,3 +1,5 @@
+using FrostShelter.SaveSystem;
+
 namespace FrostShelter.Building
 {
     /// <summary>

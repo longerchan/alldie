@@ -84,7 +84,7 @@ namespace FrostShelter.Survivor
             return _survivors.Where(s => !s.IsAssigned && !s.IsInExpedition).ToList();
         }
 
-        public void AssignToBuilding(string survivorId, Building.BuildingId buildingId)
+        public void AssignToBuilding(string survivorId, BuildingId buildingId)
         {
             var survivor = GetSurvivor(survivorId);
             if (survivor != null)
