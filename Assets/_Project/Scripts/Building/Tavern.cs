@@ -70,5 +70,4 @@ namespace FrostShelter.Building
         }
     }
 
-    public enum HeroQuality { Blue, Purple, Gold }
 }

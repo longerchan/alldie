@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FrostShelter.Hero;
 
 namespace FrostShelter.Battle
 {
@@ -115,7 +116,6 @@ namespace FrostShelter.Battle
         public void TickCooldown() { if (CurrentCooldown > 0) CurrentCooldown--; }
     }
 
-    public enum SkillTriggerType { Passive, OnAttack, OnHurt, OnBattleStart, Manual }
 
     public class BattleBuff
     {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FrostShelter.SaveSystem;
 
 namespace FrostShelter.UI.Views
 {
@@ -64,5 +65,4 @@ namespace FrostShelter.UI.Views
         public string AssignedBuildingName;
     }
 
-    public enum HeroQuality { Blue, Purple, Gold }
 }
