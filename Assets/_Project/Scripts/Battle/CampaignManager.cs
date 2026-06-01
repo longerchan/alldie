@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using FrostShelter.Core;
 using FrostShelter.Resource;
+using FrostShelter.SaveSystem;
 
 namespace FrostShelter.Battle
 {
@@ -189,7 +190,7 @@ namespace FrostShelter.Battle
     [Serializable]
     public struct CampaignReward
     {
-        public Resource.ResourceType Type;
+        public ResourceType Type;
         public float Amount;
     }
 }

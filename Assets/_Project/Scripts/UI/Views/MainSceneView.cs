@@ -1,4 +1,5 @@
 using System;
+using FrostShelter.SaveSystem;
 
 namespace FrostShelter.UI.Views
 {
@@ -73,7 +74,7 @@ namespace FrostShelter.UI.Views
     [Serializable]
     public struct ResourceDisplayEntry
     {
-        public Resource.ResourceType Type;
+        public ResourceType Type;
         public string IconName;
         public float CurrentAmount;
         public float MaxCapacity;
