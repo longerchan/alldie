@@ -10,7 +10,7 @@ namespace FrostShelter.Building
     /// <summary>
     /// 建筑系统总管理器。统一管理13种建筑的创建、升级、驻守、生产收集。
     /// </summary>
-    public class BuildingManager : IService
+    public partial class BuildingManager : IService
     {
         private readonly Dictionary<BuildingId, BuildingBase> _buildings = new();
 
