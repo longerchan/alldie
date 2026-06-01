@@ -1,5 +1,6 @@
 using System;
 using FrostShelter.Core;
+using CoreCtx = FrostShelter.Core.AppContext;
 using FrostShelter.Building;
 
 namespace FrostShelter.Temperature
@@ -65,7 +66,7 @@ namespace FrostShelter.Temperature
             {
                 OnTemperatureChanged?.Invoke(previousTemp, CurrentTemperature);
                 _events?.Dispatch(GameEventType.TemperatureChanged,
-                    new AppContext.TemperatureChangedArgs
+                    new CoreCtx.TemperatureChangedArgs
                     {
                         CurrentTemp = CurrentTemperature,
                         PreviousTemp = previousTemp,
@@ -108,7 +109,7 @@ namespace FrostShelter.Temperature
             OnBlizzardStarted?.Invoke();
             _events?.Dispatch(GameEventType.BlizzardStarted);
             _events?.Dispatch(GameEventType.TemperatureChanged,
-                new AppContext.TemperatureChangedArgs
+                new CoreCtx.TemperatureChangedArgs
                 {
                     CurrentTemp = CurrentTemperature,
                     PreviousTemp = previousTemp,
@@ -131,7 +132,7 @@ namespace FrostShelter.Temperature
             OnBlizzardEnded?.Invoke();
             _events?.Dispatch(GameEventType.BlizzardEnded);
             _events?.Dispatch(GameEventType.TemperatureChanged,
-                new AppContext.TemperatureChangedArgs
+                new CoreCtx.TemperatureChangedArgs
                 {
                     CurrentTemp = CurrentTemperature,
                     PreviousTemp = previousTemp,
@@ -148,7 +149,7 @@ namespace FrostShelter.Temperature
             UpdateThresholdEffects();
 
             _events?.Dispatch(GameEventType.TemperatureChanged,
-                new AppContext.TemperatureChangedArgs
+                new CoreCtx.TemperatureChangedArgs
                 {
                     CurrentTemp = CurrentTemperature,
                     PreviousTemp = previousTemp,

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FrostShelter.Core;
+using CoreCtx = FrostShelter.Core.AppContext;
 using FrostShelter.SaveSystem;
 using FrostShelter.Resource;
 
@@ -116,7 +117,7 @@ namespace FrostShelter.Building
 
             OnBuildingLevelUp?.Invoke(id, oldLevel, building.Level);
             _events?.Dispatch(GameEventType.BuildingLevelUp,
-                new AppContext.BuildingUpgradeArgs
+                new CoreCtx.BuildingUpgradeArgs
                 {
                     BuildingId = id,
                     OldLevel = oldLevel,

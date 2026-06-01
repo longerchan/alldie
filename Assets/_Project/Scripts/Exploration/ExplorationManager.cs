@@ -148,7 +148,7 @@ namespace FrostShelter.Exploration
         /// <summary>强制结束探险（食物/暖炉耗尽或全军覆没）</summary>
         public ExpeditionResult ForceEndExpedition()
         {
-            if (!IsExpeditionActive) return null;
+            if (!IsExpeditionActive) return default;
 
             IsExpeditionActive = false;
             var result = new ExpeditionResult

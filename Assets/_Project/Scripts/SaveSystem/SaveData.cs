@@ -1,3 +1,4 @@
+using FrostShelter.Core;
 using System;
 using System.Collections.Generic;
 

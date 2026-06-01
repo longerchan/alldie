@@ -1,3 +1,4 @@
+using System.Linq;
 using FrostShelter.Core;
 using FrostShelter.Temperature;
 
@@ -40,7 +41,7 @@ namespace FrostShelter.Survivor
             }
 
             // 检查是否有幸存者逃跑
-            var escaped = survivors.FindAll(s => s.WantsToEscape);
+            var escaped = survivors.Where(s => s.WantsToEscape).ToList();
             foreach (var s in escaped)
             {
                 _events?.Dispatch(GameEventType.SurvivorSatisfactionChanged);
