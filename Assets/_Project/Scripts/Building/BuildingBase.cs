@@ -13,7 +13,7 @@ namespace FrostShelter.Building
         public BuildingId Id { get; protected set; }
         public int Level { get; protected set; }
         public BuildingConfigSO Config { get; protected set; }
-        public bool IsUpgrading { get; protected set; }
+        public bool IsUpgrading { get; set; }
         public float UpgradeProgress { get; protected set; }
         public DateTime UpgradeFinishTime { get; protected set; }
 
