@@ -1,10 +1,11 @@
 using System;
+using UnityEngine;
 using System.Collections.Generic;
 
 namespace FrostShelter.Story
 {
     [Serializable]
-    public class StoryChapterSO
+    public class StoryChapterSO : ScriptableObject
     {
         public int ChapterNumber;
         public string ChapterTitle;

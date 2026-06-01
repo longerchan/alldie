@@ -1,11 +1,12 @@
 using System;
+using UnityEngine;
 using System.Collections.Generic;
 using FrostShelter.SaveSystem;
 
 namespace FrostShelter.Hero
 {
     [Serializable]
-    public class HeroConfigSO
+    public class HeroConfigSO : ScriptableObject
     {
         public string HeroId;
         public string HeroName;

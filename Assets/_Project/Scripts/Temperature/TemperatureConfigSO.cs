@@ -1,9 +1,10 @@
 using System;
+using UnityEngine;
 
 namespace FrostShelter.Temperature
 {
     [Serializable]
-    public class TemperatureConfigSO
+    public class TemperatureConfigSO : ScriptableObject
     {
         public float BaseTemperature = -30f;
         public float TemperaturePerFurnaceLevel = 3f;

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace FrostShelter.Battle
 {
@@ -6,7 +7,7 @@ namespace FrostShelter.Battle
     /// 兵种配置。定义三种兵种的属性成长曲线。
     /// </summary>
     [Serializable]
-    public class TroopConfigSO
+    public class TroopConfigSO : ScriptableObject
     {
         public string ConfigId;
         public TroopType TroopType;

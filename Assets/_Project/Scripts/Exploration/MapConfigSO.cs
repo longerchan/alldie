@@ -1,9 +1,10 @@
 using System;
+using UnityEngine;
 
 namespace FrostShelter.Exploration
 {
     [Serializable]
-    public class MapConfigSO
+    public class MapConfigSO : ScriptableObject
     {
         public int MinGridSize = 6;
         public int MaxGridSize = 8;

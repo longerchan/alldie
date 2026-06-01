@@ -5,7 +5,7 @@ using FrostShelter.Resource;
 namespace FrostShelter.Events
 {
     [Serializable]
-    public class RandomEventSO
+    public class RandomEventSO : ScriptableObject
     {
         public string EventId;
         public string EventTitle;

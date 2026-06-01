@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 using FrostShelter.SaveSystem;
 
 namespace FrostShelter.Building
@@ -7,7 +8,7 @@ namespace FrostShelter.Building
     /// 建筑配置 ScriptableObject。在 Unity Editor 中创建和编辑。
     /// </summary>
     [Serializable]
-    public class BuildingConfigSO
+    public class BuildingConfigSO : ScriptableObject
     {
         public BuildingId BuildingId;
         public string DisplayName;
