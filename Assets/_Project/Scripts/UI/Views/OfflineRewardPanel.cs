@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FrostShelter.SaveSystem;
 
 namespace FrostShelter.UI.Views
 {
@@ -49,7 +50,7 @@ namespace FrostShelter.UI.Views
     [Serializable]
     public struct OfflineRewardEntry
     {
-        public TimeEngine.ResourceType OutputType;
+        public ResourceType OutputType;
         public float Amount;
         public bool WasCapped;
     }
