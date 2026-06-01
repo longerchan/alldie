@@ -38,7 +38,7 @@ namespace FrostShelter.Exploration.NodeTypes
                     DisplayName = $"{costType} → {rewardType}",
                     Cost = new ResourceCost(costType, 5f + rng.Next(1, 10) * Node.DifficultyLevel),
                     RewardType = rewardType,
-                    RewardAmount = 2f + rng.Next(1, 5) * Node.PriceMultiplier,
+                    RewardAmount = 2f + rng.Next(1, 5) * Node.MerchantData.PriceMultiplier,
                 });
             }
         }

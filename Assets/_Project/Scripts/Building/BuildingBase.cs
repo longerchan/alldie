@@ -14,7 +14,7 @@ namespace FrostShelter.Building
         public int Level { get; protected set; }
         public BuildingConfigSO Config { get; protected set; }
         public bool IsUpgrading { get; set; }
-        public float UpgradeProgress { get; protected set; }
+        public float UpgradeProgress { get; set; }
         public DateTime UpgradeFinishTime { get; protected set; }
 
         public List<string> AssignedSurvivorIds { get; protected set; } = new();

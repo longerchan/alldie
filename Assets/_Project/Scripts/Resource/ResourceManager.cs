@@ -1,6 +1,7 @@
 using System;
 using FrostShelter.Core;
 using FrostShelter.SaveSystem;
+using CoreAppCtx = FrostShelter.Core.AppContext;
 
 namespace FrostShelter.Resource
 {
@@ -71,7 +72,7 @@ namespace FrostShelter.Resource
 
             OnResourceChanged?.Invoke(type, oldValue, newValue, reason);
             _events?.Dispatch(GameEventType.ResourceChanged,
-                new AppContext.ResourceChangedArgs
+                new CoreAppCtx.ResourceChangedArgs
                 {
                     Type = type,
                     OldValue = oldValue,
@@ -94,7 +95,7 @@ namespace FrostShelter.Resource
 
             OnResourceChanged?.Invoke(type, oldValue, newValue, reason);
             _events?.Dispatch(GameEventType.ResourceChanged,
-                new AppContext.ResourceChangedArgs
+                new CoreAppCtx.ResourceChangedArgs
                 {
                     Type = type,
                     OldValue = oldValue,
