@@ -1,0 +1,4 @@
+ConfigId,TroopType,DisplayName,Description,BaseAtk,BaseDef,BaseHp,BaseSpeed,AtkPerLevel,DefPerLevel,HpPerLevel,StrongAgainst,WeakAgainst,TrainingWood,TrainingMeat,TrainingIron,TrainingTimePerUnit
+troop_shield,Shield,盾兵,前排坦克吸收伤害克矛兵被射手克,8,12,60,3,2.5,3,12,Spear,Archer,10,5,2,30
+troop_spear,Spear,矛兵,突击单位穿刺后排克射手被盾兵克,12,6,40,5,3.5,1.5,8,Archer,Shield,8,12,3,30
+troop_archer,Archer,射手,远程输出高伤害克盾兵被矛兵克,15,4,35,6,4,1,7,Shield,Spear,5,8,5,30

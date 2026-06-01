@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29b2ab9e9da12b34b0d8ae1b99e2621, type: 3}
+  m_Name: TemperatureConfig
+  m_EditorClassIdentifier: 
+  BaseTemperature: -30
+  TemperaturePerFurnaceLevel: 3
+  MaxTemperature: 20
+  MaxMinTemperature: -60
+  EfficiencyCurves:
+  - MinTemp: -20
+    MaxTemp: 100
+    ProductionEfficiency: 1
+    SurvivorDamagePerHour: 0
+    SickChancePerHour: 0
+  - MinTemp: -30
+    MaxTemp: -20
+    ProductionEfficiency: 0.7
+    SurvivorDamagePerHour: 0.02
+    SickChancePerHour: 0.01
+  - MinTemp: -100
+    MaxTemp: -30
+    ProductionEfficiency: 0.4
+    SurvivorDamagePerHour: 0.05
+    SickChancePerHour: 0.03
+  BlizzardTempDrop: 10
+  BlizzardMinDuration: 180
+  BlizzardMaxDuration: 600
+  BlizzardIntervalMinMinutes: 20
+  BlizzardIntervalMaxMinutes: 60
