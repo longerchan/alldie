@@ -1,5 +1,6 @@
 using FrostShelter.SaveSystem;
 using System;
+using UnityEngine;
 using FrostShelter.Resource;
 
 namespace FrostShelter.Events
