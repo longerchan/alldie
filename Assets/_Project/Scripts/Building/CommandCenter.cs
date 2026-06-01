@@ -1,3 +1,4 @@
+using System;
 using FrostShelter.SaveSystem;
 
 namespace FrostShelter.Building
